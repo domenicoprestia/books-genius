@@ -1,3 +1,9 @@
 .search {
-  margin-left: 350px;
+  margin-left: 25%;
+}
+
+@media screen and(max-width: 800px) {
+  .search {
+    margin-left: 30%;
+  }
 }

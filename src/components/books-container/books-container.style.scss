@@ -1,6 +1,6 @@
 .category {
   text-align: left;
-  margin-left: 350px;
+  margin-left: 25%;
 }
 
 .book-container {
@@ -10,4 +10,20 @@
 a {
   text-decoration: none;
   color: black;
+}
+
+@media screen and (max-width: 800px) {
+  .category {
+    text-align: left;
+    margin-left: 15%;
+  }
+
+  .book-container {
+    margin: auto;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }

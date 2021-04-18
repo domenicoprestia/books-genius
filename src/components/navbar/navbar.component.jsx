@@ -9,24 +9,24 @@ const Navbar = () => {
          <ul>
          <h3 className='title'>Discovery</h3>
             <li>
-               <Link to='/search'>Search Books 🔎</Link>
+               <Link to='/search'><span className='name'>Search Books</span> 🔎</Link>
             </li>
          <h3 className='title'>Genres</h3>
             <li>
-               <a href='/home#Fiction'>Fiction 🤖</a>
+               <a href='/#Fiction'><span className='name'>Fiction</span> 💭</a>
             </li>
             <li>
-               <a href='/home#Poetry'>Poetry 📜</a>
+               <a href='/#Poetry'><span className='name'>Poetry</span> 📜</a>
             </li>
             <li>
-               <a href='/home#Fantasy'>Fantasy 🐉</a>
+               <a href='/#Fantasy'><span className='name'>Fantasy</span> 🐉</a>
             </li>
             <li>
-               <a href='/home#Romance'>Romance 💖</a>
+               <a href='/#Romance'><span className='name'>Romance</span> 💖</a>
             </li>
 
             <li>
-               <a href='/home#Science'>Science 🔬</a>
+               <a href='/#Science'><span className='name'>Science</span> 🔬</a>
             </li>
          </ul>
       </div>

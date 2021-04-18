@@ -9,7 +9,7 @@ const BooksContainer = () => {
    return(
       <div className='book-container'>
       <section id='Fiction'>
-         <h2 className='category'>Fiction 🤖</h2>
+         <h2 className='category'>Fiction 💭</h2>
          <BookSection fetchUrl={requests.fiction}/>
       </section>
       <section id='Poetry'>

@@ -1,3 +1,69 @@
 .BookInfo {
-  margin-left: 350px;
+  margin-left: 30%;
+  text-align: left;
+  max-width: 70vh;
+  border-radius: 15px;
+  margin-top: 30px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.35);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.35);
+}
+
+.headerBook {
+  .titleBook {
+  }
+}
+
+.bodyBook {
+  display: flex;
+  flex-direction: row;
+
+  .bookImage {
+    margin-top: 20px;
+    max-height: 200px;
+    border-radius: 15px;
+  }
+
+  .bookDesc {
+    font-size: 20px;
+    margin-left: 25px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .BookInfo {
+    margin-left: 30%;
+    text-align: left;
+    max-width: 70vh;
+    border-radius: 15px;
+    margin-top: 30px;
+    padding: 20px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.35);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.35);
+  }
+
+  .headerBook {
+    .titleBook {
+      margin-left: 20px;
+    }
+  }
+
+  .bodyBook {
+    display: flex;
+    flex-direction: column;
+
+    .bookImage {
+      margin-top: 20px;
+      max-height: 250px;
+      max-width: 200px;
+      margin-left: 20px;
+      border-radius: 15px;
+      align-items: center;
+    }
+
+    .bookDesc {
+      font-size: 20px;
+      margin-left: 25px;
+    }
+  }
 }

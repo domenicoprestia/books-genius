@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useContext} from 'react'
+import React, {useState, useEffect, useContext, Children} from 'react'
 import axios from '../../utils/axios'
 import Book from '../book/book.component'
 import {Link} from 'react-router-dom'
@@ -29,8 +29,8 @@ const BookSection = ({fetchUrl}) => {
       fetchBooks()
    }, [fetchUrl])
    
-   async function handleClick(){
-      await setClickedBook([click])
+   async function handleClick(book){
+      await setClickedBook([book])
    }
 
 
@@ -41,7 +41,7 @@ const BookSection = ({fetchUrl}) => {
    return(
       <div className='book-section'>
          {books.map(book => (
-         <div className='single-book' key={book.id} onClick={click = book, handleClick}>
+         <div className='single-book' key={book.id} onClick={() => handleClick(book)}>
             <Link to={`/books/${book.id}`}>
                <Book id={book.id} thumbnail={book.volumeInfo.imageLinks.thumbnail} title={truncate(book.volumeInfo.title, 15)}/>
             </Link>
