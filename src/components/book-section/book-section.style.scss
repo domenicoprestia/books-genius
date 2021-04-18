@@ -1,0 +1,29 @@
+.book-section {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-left: 350px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.35);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.35);
+  padding: 30px;
+  max-width: 1000px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+
+  &::-webkit-scrollbar {
+    display: initial;
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.1);
+  }
+}

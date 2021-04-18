@@ -1,0 +1,18 @@
+.book-img {
+  border-radius: 10px;
+}
+
+.book-title {
+  font-size: 15px;
+}
+
+.book {
+  height: 30vh;
+  max-height: 30vh;
+  margin-right: 80px;
+  transition: all 450ms;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+}
