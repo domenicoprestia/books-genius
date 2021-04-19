@@ -9,11 +9,6 @@
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.35);
 }
 
-.headerBook {
-  .titleBook {
-  }
-}
-
 .bodyBook {
   display: flex;
   flex-direction: row;
@@ -28,6 +23,10 @@
     font-size: 20px;
     margin-left: 25px;
   }
+}
+
+.booklink {
+  margin-left: 25px;
 }
 
 @media screen and (max-width: 800px) {

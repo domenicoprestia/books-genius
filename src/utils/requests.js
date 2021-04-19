@@ -9,10 +9,10 @@ const requests = {
    searchAuthor: `volumes?q=author:&maxResults=10&key=${process.env.REACT_APP_API_KEY}`,
 
 
-   searchSubject:`volumes?q=author:&maxResults=10&key=${process.env.REACT_APP_API_KEY}`,
+   searchSubject:`volumes?q=subject:&maxResults=10&key=${process.env.REACT_APP_API_KEY}`,
    
 
-   searchName: `volumes?q=author:&maxResults=10&key=${process.env.REACT_APP_API_KEY}`
+   searchName: `volumes?q=&maxResults=10&key=${process.env.REACT_APP_API_KEY}`
    
 }
 
