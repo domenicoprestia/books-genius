@@ -20,6 +20,11 @@
 
   .logo {
     color: #991da2;
+    transition: transform 450ms;
+
+    &:hover {
+      transform: scale(1.08);
+    }
   }
 }
 

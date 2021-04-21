@@ -5,7 +5,7 @@ import './navbar.style.scss'
 const Navbar = () => {
    return(
       <div className='side-nav'>
-      <h2 className='logo'>books-genius</h2>
+      <Link to='/'><h2 className='logo'>books-genius</h2></Link>
          <ul>
          <h3 className='title'>Discovery</h3>
             <li>

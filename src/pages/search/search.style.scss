@@ -1,13 +1,18 @@
-
-
 .search {
-  margin-left: 37%;
-  margin-top: 5%;
-  border-radius: 13px;
-  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.35);
-  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.35);
+  margin-left: 39%;
+  margin-top: 3%;
 
-  .params{
+  .searchTitle {
+    margin-bottom: 20px;
+  }
+
+  form {
+    border-radius: 13px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.35);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.35);
+    position: absolute;
+  }
+  .params {
     height: 50px;
     border-radius: 12px;
     border: none;
@@ -15,20 +20,19 @@
     background-color: #e5be01;
     transition: transform 400ms;
 
-    
-    &:hover{
+    &:hover {
       transform: scale(1.05);
     }
   }
 
-  .searchInput{
+  .searchInput {
     width: 300px;
     height: 50px;
     border-radius: 12px;
     border: none;
   }
 
-  .searchButton{
+  .searchButton {
     height: 50px;
     width: 40px;
     border-radius: 12px;
@@ -36,14 +40,70 @@
     background-color: #991da2;
     transition: transform 400ms;
 
-    &:hover{
+    &:hover {
       transform: scale(1.05);
     }
   }
 }
 
+.searchedBooks {
+  margin-top: 150px;
+  margin-left: -22%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+}
+
 @media screen and(max-width: 800px) {
   .search {
-    margin-left: 30%;
+    margin-top: 3%;
+    margin-left: 37%;
+
+    form {
+      border-radius: 13px;
+      -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.35);
+      box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.35);
+      position: absolute;
+    }
+    .params {
+      height: 50px;
+      border-radius: 12px;
+      border: none;
+      margin-right: 10px;
+      background-color: #e5be01;
+      transition: transform 400ms;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    .searchInput {
+      width: 200px;
+      height: 50px;
+      border-radius: 12px;
+      border: none;
+    }
+
+    .searchButton {
+      height: 50px;
+      width: 40px;
+      border-radius: 12px;
+      border: none;
+      background-color: #991da2;
+      transition: transform 400ms;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .searchedBooks {
+    margin-top: 150px;
+    margin-left: -10%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
   }
 }

@@ -4,6 +4,8 @@ import {BooksContext} from '../../utils/context'
 import requests from '../../utils/requests'
 import axios from '../../utils/axios'
 import {Link} from 'react-router-dom'
+import Book from '../../components/book/book.component'
+import {FcGoogle} from 'react-icons/fc'
 
 const Search = () => {
 
@@ -53,6 +55,7 @@ const handleSubmit = async (e) => {
       req[0] += String(inputField)
       let fetchUrl = req.join('')
       books = await fetchData(fetchUrl)
+      console.log(books)
       setBooks(books)
    }
 
@@ -68,8 +71,12 @@ function truncate(str, n){
    return str?.length > n ? str.substr(0, n-1) + "..." : str
 }
    return(
-      <div className='search'>
-         
+      
+
+         <div className='search' >
+
+         <div>
+         <h3 className='searchTitle'>Search on <FcGoogle/> Books </h3>
          <form onSubmit={handleSubmit}>
          
          <select className='params' name="params">
@@ -84,20 +91,19 @@ function truncate(str, n){
             <button type='submit' class='searchButton'>🔎</button>
 
          </form>
-
-         <div className='books'>
-            {
-               books.map(book => (
-                  <div className='single-book' key={book.id} onClick={() => handleClick(book)}>
-                     <Link to={`/books/${book.id}`}>
-                        <Book id={book.id} thumbnail={book.volumeInfo.imageLinks.thumbnail} title={truncate(book.volumeInfo.title, 15)}/>
-                     </Link>
-                  </div>
-                  ))
-            }
          </div>
-      </div>
 
+         <div className='searchedBooks'>
+         {books.map(book => (
+            <div className='single-book' key={book.id} onClick={() => handleClick(book)}>
+               <Link to={`/books/${book.id}`}>
+                  <Book id={book.id} thumbnail={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : null} title={truncate(book.volumeInfo.title, 15)}/>
+               </Link>
+            </div>
+            ))}
+         </div>
+
+         </div>
    )
 }
 
